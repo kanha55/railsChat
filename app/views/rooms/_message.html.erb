@@ -1,0 +1,8 @@
+<div id="messages">
+
+  <%= render "messages/form", room: room %>
+  <%= turbo_stream_from "room" %>
+  <div id="messages_room">
+    <%= render room.messages %>
+  </div>
+</div>

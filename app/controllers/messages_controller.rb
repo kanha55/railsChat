@@ -26,7 +26,7 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
-        format.html { redirect_to message_url(@message), notice: "Message was successfully created." }
+        format.html { redirect_to @message.room, notice: "Message was successfully created." }
         format.json { render :show, status: :created, location: @message }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -60,7 +60,7 @@ class MessagesController < ApplicationController
 
   private
     def set_room
-      @room = Room.find(params[:id])
+      @room = Room.find(params[:room_id])
     end  
   # Use callbacks to share common setup or constraints between actions.
     def set_message

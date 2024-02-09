@@ -74,6 +74,7 @@ GEM
     bootsnap (1.18.3)
       msgpack (~> 1.2)
     builder (3.2.4)
+    byebug (11.1.3)
     capybara (3.40.0)
       addressable
       matrix
@@ -207,9 +208,8 @@ GEM
       railties (>= 6.0.0)
     thor (1.3.0)
     timeout (0.4.1)
-    turbo-rails (2.0.1)
+    turbo-rails (0.9.1)
       actionpack (>= 6.0.0)
-      activejob (>= 6.0.0)
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
@@ -233,6 +233,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  byebug (~> 11.1)
   capybara
   debug
   devise (~> 4.9)
@@ -246,7 +247,7 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
   stimulus-rails
   tailwindcss-rails (~> 2.3)
-  turbo-rails
+  turbo-rails (~> 0.8)
   tzinfo-data
   web-console
 
@@ -254,4 +255,4 @@ RUBY VERSION
    ruby 3.0.0p0
 
 BUNDLED WITH
-   2.2.3
+   2.2.8
